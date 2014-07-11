@@ -1,8 +1,10 @@
 #!/usr/bin/env ruby
 # -*- coding: utf-8 -*-
 
-# use as:
+# use in working copy as:
 # $ svn log | authors.rb > authors-transform.txt
+# or:
+# $ cvs log | authors.rb > authors-transform.txt
 #
 # generates a template for an authors-transform.txt to be used for rewriting
 # the commit history with nice names.
