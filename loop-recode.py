@@ -5,6 +5,9 @@
 """
 Recode text, e.g. old commit messages.
 
+use like:
+    $ git filter-branch -f --msg-filter /path/to/loop-recode.py
+
 Allows UTF-8 or 8-bit input and returns UTF-8. Current configuration
 expects German text, recognised by the presens of umlauts, Eszett, or
 paragraph signs etc.
