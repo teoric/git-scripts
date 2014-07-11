@@ -1,0 +1,1 @@
+me = My Name <my.addres@mail.server>
