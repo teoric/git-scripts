@@ -13,7 +13,7 @@
 #       AUTHOR: Bernhard Fisseni (bfi), bernhard.fisseni@uni-due.de
 # ORGANIZATION: Uni Duisburg-Essen
 #      CREATED: 2014-07-08, 11:29:02 (CEST)
-#  Last Change: 2014-07-11, 22:15:40 CEST
+#  Last Change: 2014-07-11, 22:36:09 CEST
 #===============================================================================
 
 use strict;
@@ -41,7 +41,7 @@ open(my $authors, "<", $file);
 my %authors;
 
 while (<$authors>){
-    next if m/^\s*#/;
+    next if m/^\s*#/;  # name commented out
     if (m/^\s*(?<short>.*?)\s*=\s*(?<name>.*?)\s*<(?<email>.*?)>/){
         next if ($+{name} eq $+{short});
         # say $+{short}, " + ", $+{name}, " + ", $+{email};
